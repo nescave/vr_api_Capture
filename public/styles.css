@@ -1,0 +1,93 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(39, 39, 39);
+    font-family: Gotham Rounded, sans-serif;
+}
+.logcatArea{
+    border-bottom: 5px solid grey ;
+
+}
+.header{
+    color: white;
+    position: relative;
+    /* display: inline; */
+    left: 40%;
+    margin: auto;
+    padding-top: 15px;
+}
+.logcatProp{
+    /* border: 5px solid grey; */
+    padding: .5em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    /* justify-content: left;     */
+}
+.propertyBox{
+    background-color: grey;
+    padding: 5px;
+    justify-content: center;
+    max-height: 1em;
+    outline: auto;
+}
+.propertyBox.warrning{
+    background-color: rgb(122, 122, 54);
+    padding: 5px;
+    justify-content: center;
+    max-height: 1em;
+    outline: auto;
+}
+.propertyBox.critical{
+    background-color: rgb(121, 41, 41);
+    padding: 5px;
+    justify-content: center;
+    max-height: 1em;
+    outline: auto;
+}
+.name{
+    position: relative;
+    /* bottom: 20%; */
+    display: inline;
+    font-size: medium;
+    padding-right: 5%;
+    border-right: 2px solid black ;
+}
+.val{
+    position: relative;
+    /* bottom: 20%; */
+    display: inline;
+    padding-left: 5%;
+    margin: auto;
+    font-size: large;
+}
+button{
+    background-color: grey;
+    box-shadow: none;
+    padding: 4px;
+    border: 1px solid lightgray;
+    margin: .5em;
+}
+button:hover{
+    background-color: #909090;
+}
+.debugOutput{
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top: 15em;
+    left: 1em;
+    margin: auto;
+    box-sizing: content-box;
+    justify-content: center;
+}
+.utils{
+    border-bottom: 5px solid grey;
+}
+.utilsContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+/* #start_logcat_btn{
+
+} */

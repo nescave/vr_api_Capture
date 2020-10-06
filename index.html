@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="socket.io.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="public/styles.css"> -->
+    <script src="main.js" defer></script>
+    <title>Logcat_capture</title>
+</head>
+<body>
+    <div class="logcatArea">
+        <h1 class="header">Logcat</h1>
+        <div class="logcatProp">
+            <div class="propertyBox">
+                <div class="name">FPS</div>
+                <div class="val" id="FPS">0</div>
+            </div>
+            <div class="propertyBox">
+                <div class="name">Stale</div>
+                <div class="val" id="Stale">0</div>
+            </div>
+            <div class="propertyBox">
+                <div class="name">Tears</div>
+                <div class="val" id="Tears">0</div>
+            </div>
+            <div class="propertyBox">
+                <div class="name">Free</div>
+                <div class="val" id="FreeMem">0</div>
+            </div>
+            <div class="propertyBox">
+                <div class="name">GPU%</div>
+                <div class="val" id="GPU">0</div>
+            </div>
+            <div class="propertyBox">
+                <div class="name">CPU%</div>
+                <div class="val" id="CPU">0</div>
+            </div>
+            <div class="propertyBox">
+                <div class="name">App</div>
+                <div class="val" id="App">0</div>
+            </div>
+        </div>
+        <button id="start_logcat_btn">Start Logcat</button>
+        <!-- <div class="debugOutput" id="debugOutputText">12345</div> -->
+    </div>
+    <div class="utils">
+        <h2 class="header">Utils</h2>
+        <div class="utilsContainer">
+            <button id="screenCap_btn">Screen Capture</button>
+            <button id="logToFile_btn">Log To File</button>
+            <button id="clearLog_btn">Clear Log</button>
+            <button>Nie mam pomysłu ale coś może tu być</button>
+        </div>
+        <!-- <input id="select_file" type="file" style="visibility: hidden;" webkitdirectory directory/> -->
+    </div>
+</body>
+</html>
