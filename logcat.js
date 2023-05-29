@@ -10,9 +10,6 @@ const app = express()
 
 const logFilePath = './logs/log.log'
 const port = 8080
-// const shell = spawn('adb,',['shell'])
-
-
 
 const server = app.listen(port, ()=>{
     console.log(`listening on port ${port}`)
